@@ -13,7 +13,7 @@ if not os.path.exists(DATA_FILE):
     df.to_csv(DATA_FILE, index=False)
 
 # --- 2. HEADER & LAYOUT ---
-st.title("🎯 My personalize task network")
+st.title("🎯 Sumaya's task network")
 
 # THIS LINE DEFINES COL1 and COL2 (The order is very important!)
 col1, col2 = st.columns([1, 2])
@@ -63,4 +63,5 @@ with col2:
                     st.rerun()
             st.divider()
     else:
+
         st.info("No tasks! Time for some English practice or family time? 😊")
